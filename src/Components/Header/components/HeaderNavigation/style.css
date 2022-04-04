@@ -1,9 +1,9 @@
-.HeaderNav-ul {
+.HeaderNavigation-ul {
   list-style-type: none;
   overflow: hidden;
 }
 
-.HeaderNav-li {
+.HeaderNavigation-li {
   margin: 0.1rem;
   padding: 0.1rem;
   float: left;

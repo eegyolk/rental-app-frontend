@@ -1,24 +1,24 @@
 import { Link, Outlet } from 'react-router-dom';
 import './style.css';
 
-function HeaderNav() {
+function HeaderNavigation() {
   return (
     <div>
       <nav>
-        <ul className="HeaderNav-ul">
-          <li className="HeaderNav-li">
+        <ul className="HeaderNavigation-ul">
+          <li className="HeaderNavigation-li">
             <Link to="/">Home</Link>
           </li>
-          <li className="HeaderNav-li">
+          <li className="HeaderNavigation-li">
             <Link to="/search">Search</Link>
           </li>
-          <li className="HeaderNav-li">
+          <li className="HeaderNavigation-li">
             <Link to="/renter">For renters</Link>
           </li>
-          <li className="HeaderNav-li">
+          <li className="HeaderNavigation-li">
             <Link to="/agent">For agents</Link>
           </li>
-          <li className="HeaderNav-li">
+          <li className="HeaderNavigation-li">
             <Link to="/landlord">For landlords</Link>
           </li>
         </ul>
@@ -31,4 +31,4 @@ function HeaderNav() {
   );
 }
 
-export default HeaderNav;
+export default HeaderNavigation;
