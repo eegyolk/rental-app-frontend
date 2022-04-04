@@ -1,23 +1,38 @@
-import logo from '../../logo.svg';
 import './style.css';
+import HomeHero from './components/HomeHero';
+import HomeBenefits from './components/HomeBenefits';
+import HomeAdvertisement from './components/HomeAdvertisement';
+import HomeNewPropertyListing from './components/HomeNewPropertyListing';
+import Banner from '../../Components/Banner';
+import HomeFeatureOverview from './components/HomeFeatureOverview';
 
 function Home() {
   return (
     <div className="Home">
-      <header className="Home-header">
-        <img src={logo} className="Home-logo" alt="logo" />
-        <p>
-          Edit <code>src/Pages/Home/index.js</code> and save to reload.
-        </p>
-        <a
-          className="Home-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <HomeHero />
+        <br />
+      </div>
+      <div>
+        <HomeBenefits />
+        <br />
+      </div>
+      <div>
+        <HomeAdvertisement />
+        <br />
+      </div>
+      <div>
+        <HomeNewPropertyListing />
+        <br />
+      </div>
+      <div>
+        <Banner />
+        <br />
+      </div>
+      <div>
+        <HomeFeatureOverview />
+        <br />
+      </div>
     </div>
   );
 }
