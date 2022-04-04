@@ -10,10 +10,16 @@ function HeaderNav() {
             <Link to="/">Home</Link>
           </li>
           <li className="HeaderNav-li">
-            <Link to="/about">About</Link>
+            <Link to="/search">Search</Link>
           </li>
           <li className="HeaderNav-li">
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/renter">For renters</Link>
+          </li>
+          <li className="HeaderNav-li">
+            <Link to="/agent">For agents</Link>
+          </li>
+          <li className="HeaderNav-li">
+            <Link to="/landlord">For landlords</Link>
           </li>
         </ul>
       </nav>

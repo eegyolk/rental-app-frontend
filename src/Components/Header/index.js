@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <div>
-      <div className="Header">My Header</div>
+      {/* LOGO HERE */}
       {routes}
     </div>
   );
