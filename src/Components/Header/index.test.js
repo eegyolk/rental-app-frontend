@@ -3,8 +3,8 @@ import { render, screen } from '@testing-library/react';
 
 import Header from './index.js';
 
-test('renders My Header', () => {
+test('renders HeaderAnnouncement component', () => {
   render(<Header />, { wrapper: MemoryRouter });
-  const linkElement = screen.getByText(/My Header/i);
+  const linkElement = screen.getByText(/Announcement/i);
   expect(linkElement).toBeInTheDocument();
 });
