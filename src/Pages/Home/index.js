@@ -1,4 +1,5 @@
 import './style.css';
+import Search from '../../Components/Search';
 import HomeHero from './components/HomeHero';
 import HomeBenefits from './components/HomeBenefits';
 import HomeAdvertisement from './components/HomeAdvertisement';
@@ -9,6 +10,10 @@ import HomeFeatureOverview from './components/HomeFeatureOverview';
 function Home() {
   return (
     <div className="Home">
+      <div>
+        <Search />
+        <br />
+      </div>
       <div>
         <HomeHero />
         <br />
