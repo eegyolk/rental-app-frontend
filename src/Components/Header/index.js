@@ -1,4 +1,6 @@
 import { useRoutes } from 'react-router-dom';
+
+import HeaderAnnouncement from './components/HeaderAnnouncement';
 import './style.css';
 import headerNavRoutes from '../../routes/headerNavRoutes';
 
@@ -7,8 +9,13 @@ function Header() {
 
   return (
     <div>
-      {/* LOGO HERE */}
-      {routes}
+      <div>
+        <HeaderAnnouncement />
+      </div>
+      <div>
+        {/* LOGO HERE */}
+        {routes}
+      </div>
     </div>
   );
 }
