@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+
 import Home from './index.js';
 
 test('renders learn react link', () => {

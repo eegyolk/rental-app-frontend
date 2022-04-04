@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+
 import Renter from './index.js';
 
 test('renders This is my renter page.', () => {
