@@ -1,6 +1,7 @@
 import { combineReducers, createStore, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
+
 import homeReducer from '../Pages/Home/reducer';
 import searchReducer from '../Pages/Search/reducer';
 import renterReducer from '../Pages/Renter/reducer';
