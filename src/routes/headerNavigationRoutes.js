@@ -6,7 +6,7 @@ import renterRoute from '../Pages/Renter/route';
 import agentRoute from '../Pages/Agent/route';
 import landlordRoute from '../Pages/Landlord/route';
 
-const headerNavRoutes = [
+const headerNavigationRoutes = [
   {
     path: '/',
     element: <HeaderNavigation />,
@@ -14,4 +14,4 @@ const headerNavRoutes = [
   },
 ];
 
-export default headerNavRoutes;
+export default headerNavigationRoutes;

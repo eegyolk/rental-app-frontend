@@ -1,11 +1,10 @@
 import { useRoutes } from 'react-router-dom';
 
+import headerNavigationRoutes from '../../routes/headerNavigationRoutes';
 import HeaderAnnouncement from './components/HeaderAnnouncement';
-import './style.css';
-import headerNavRoutes from '../../routes/headerNavRoutes';
 
 function Header() {
-  const routes = useRoutes(headerNavRoutes);
+  const routes = useRoutes(headerNavigationRoutes);
 
   return (
     <div>
