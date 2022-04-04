@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 
-import Agent from './index.js';
+import AgentPage from './index.js';
 
 test('renders This is my agent page.', () => {
-  render(<Agent />);
+  render(<AgentPage />);
   const linkElement = screen.getByText(/This is my agent page./i);
   expect(linkElement).toBeInTheDocument();
 });

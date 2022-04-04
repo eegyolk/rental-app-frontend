@@ -1,8 +1,8 @@
-.Agent {
+.RenterPage {
   text-align: center;
 }
 
-.Agent-header {
+.RenterPage-header {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,9 +1,9 @@
 import HeaderNavigation from '../Components/Header/components/HeaderNavigation';
-import homeRoute from '../Pages/Home/route';
-import searchRoute from '../Pages/Search/route';
-import renterRoute from '../Pages/Renter/route';
-import agentRoute from '../Pages/Agent/route';
-import landlordRoute from '../Pages/Landlord/route';
+import homeRoute from '../Pages/HomePage/route';
+import searchRoute from '../Pages/SearchPage/route';
+import renterRoute from '../Pages/RenterPage/route';
+import agentRoute from '../Pages/AgentPage/route';
+import landlordRoute from '../Pages/LandlordPage/route';
 
 const headerNavigationRoutes = [
   {

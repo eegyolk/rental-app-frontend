@@ -7,7 +7,7 @@ import HomeNewPropertyListing from './components/HomeNewPropertyListing';
 import Banner from '../../Components/Banner';
 import HomeFeatureOverview from './components/HomeFeatureOverview';
 
-function Home() {
+function HomePage() {
   return (
     <div className="Home">
       <div>
@@ -42,4 +42,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

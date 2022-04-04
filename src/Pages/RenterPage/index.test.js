@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 
-import Renter from './index.js';
+import RenterPage from './index.js';
 
 test('renders This is my renter page.', () => {
-  render(<Renter />);
+  render(<RenterPage />);
   const linkElement = screen.getByText(/This is my renter page./i);
   expect(linkElement).toBeInTheDocument();
 });

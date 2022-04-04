@@ -1,12 +1,12 @@
 import { lazy, Suspense } from 'react';
 
-const Search = lazy(() => import('./index'));
+const AgentPage = lazy(() => import('./index'));
 
 const route = {
-  path: '/search',
+  path: '/agent',
   element: (
     <Suspense fallback={<>...</>}>
-      <Search />
+      <AgentPage />
     </Suspense>
   ),
 };
