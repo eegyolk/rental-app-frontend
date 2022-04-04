@@ -1,5 +1,4 @@
 import HeaderNavigation from '../Components/Header/components/HeaderNavigation';
-
 import homeRoute from '../Pages/Home/route';
 import searchRoute from '../Pages/Search/route';
 import renterRoute from '../Pages/Renter/route';
