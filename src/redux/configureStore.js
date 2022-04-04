@@ -7,6 +7,7 @@ import searchReducer from '../Pages/SearchPage/reducer';
 import renterReducer from '../Pages/RenterPage/reducer';
 import agentReducer from '../Pages/AgentPage/reducer';
 import landlordReducer from '../Pages/LandlordPage/reducer';
+import propertyReducer from '../Pages/PropertyPage/reducer';
 import { watcherSaga } from './rootSaga';
 
 const reducers = combineReducers({
@@ -15,6 +16,7 @@ const reducers = combineReducers({
   renter: renterReducer,
   agent: agentReducer,
   landlord: landlordReducer,
+  property: propertyReducer,
 });
 
 const sagaMiddleware = createSagaMiddleware();
