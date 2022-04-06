@@ -1,4 +1,4 @@
-import HeaderNavigation from '../Components/Header/components/HeaderNavigation';
+import Layout from '../Components/Layout';
 import homeRoute from '../Pages/HomePage/route';
 import searchRoute from '../Pages/SearchPage/route';
 import renterRoute from '../Pages/RenterPage/route';
@@ -9,7 +9,7 @@ import propertyRoute from '../Pages/PropertyPage/route';
 const headerNavigationRoutes = [
   {
     path: '/',
-    element: <HeaderNavigation />,
+    element: <Layout />,
     children: [
       homeRoute,
       searchRoute,
