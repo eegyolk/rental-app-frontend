@@ -1,25 +1,28 @@
-import { Link } from 'react-router-dom';
+import { Box, HStack, Link } from '@chakra-ui/react';
+import { Link as ReachLink } from 'react-router-dom';
 
 function HeaderNavigation() {
   return (
     <nav>
-      <ul className="HeaderNavigation-ul">
-        <li className="HeaderNavigation-li">
-          <Link to="/">Home</Link>
-        </li>
-        <li className="HeaderNavigation-li">
-          <Link to="/search">Search</Link>
-        </li>
-        <li className="HeaderNavigation-li">
-          <Link to="/renter">For renters</Link>
-        </li>
-        <li className="HeaderNavigation-li">
-          <Link to="/agent">For agents</Link>
-        </li>
-        <li className="HeaderNavigation-li">
-          <Link to="/landlord">For landlords</Link>
-        </li>
-      </ul>
+      <Box bg="#E46D2A" w="100%" p={6} color="white">
+        <HStack spacing={2}>
+          <Link as={ReachLink} to="/">
+            Home
+          </Link>
+          <Link as={ReachLink} to="/search">
+            Search
+          </Link>
+          <Link as={ReachLink} to="/renter">
+            For renters
+          </Link>
+          <Link as={ReachLink} to="/agent">
+            For agents
+          </Link>
+          <Link as={ReachLink} to="/landlord">
+            For landlords
+          </Link>
+        </HStack>
+      </Box>
     </nav>
   );
 }
