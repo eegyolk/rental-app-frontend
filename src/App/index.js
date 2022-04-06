@@ -1,14 +1,11 @@
-import './style.css';
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
+import { useRoutes } from 'react-router-dom';
+
+import headerNavigationRoutes from '../routes/headerNavigationRoutes';
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Footer />
-    </div>
-  );
+  const routes = useRoutes(headerNavigationRoutes);
+
+  return <div>{routes}</div>;
 }
 
 export default App;
