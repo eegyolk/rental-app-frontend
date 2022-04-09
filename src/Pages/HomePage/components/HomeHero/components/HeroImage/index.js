@@ -5,7 +5,7 @@ function HeroImage(props) {
   const { assignedIndex, currentIndex, selectImage } = props;
   let currentImageColor = '#E46D2A';
 
-  if (currentIndex != assignedIndex) {
+  if (currentIndex !== assignedIndex) {
     currentImageColor = 'whiteAlpha.700';
   }
 
