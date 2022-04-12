@@ -1,5 +1,5 @@
-import './style.css';
-import Search from '../../Components/Search';
+import { Box } from '@chakra-ui/react';
+
 import HomeHero from './components/HomeHero';
 import HomeBenefits from './components/HomeBenefits';
 import HomeAdvertisement from './components/HomeAdvertisement';
@@ -9,16 +9,9 @@ import HomeFeatureOverview from './components/HomeFeatureOverview';
 
 function HomePage() {
   return (
-    <div className="Home">
-      <div>
-        <Search />
-        <br />
-      </div>
-      <div>
-        <HomeHero />
-        <br />
-      </div>
-      <div>
+    <Box>
+      <HomeHero />
+      {/* <div>
         <HomeBenefits />
         <br />
       </div>
@@ -37,8 +30,8 @@ function HomePage() {
       <div>
         <HomeFeatureOverview />
         <br />
-      </div>
-    </div>
+      </div> */}
+    </Box>
   );
 }
 
