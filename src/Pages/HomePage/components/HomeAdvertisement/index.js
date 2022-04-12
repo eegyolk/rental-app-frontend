@@ -1,8 +1,10 @@
+import { Box } from '@chakra-ui/react';
+
 function HomeAdvertisement() {
   return (
-    <div>
-      <div>Your brand here</div>
-    </div>
+    <Box bg="#E1E1E1" w="100%" h={500} p={3} color="black">
+      Your brand here
+    </Box>
   );
 }
 
