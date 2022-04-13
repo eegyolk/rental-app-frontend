@@ -1,4 +1,8 @@
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
+
+import { queryAnnouncement } from './reducer/actionTypes';
 
 import HomeHero from './components/HomeHero';
 import HomeBenefits from './components/HomeBenefits';
@@ -8,6 +12,12 @@ import Banner from '../../Components/Banner';
 import HomeFeatureOverview from './components/HomeFeatureOverview';
 
 function HomePage() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(queryAnnouncement());
+  }, []);
+
   return (
     <Box>
       <HomeHero />
