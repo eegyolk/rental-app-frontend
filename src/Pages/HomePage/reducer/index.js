@@ -7,7 +7,7 @@ import {
 const initialState = {
   announcement: {
     isFetching: false,
-    data: {},
+    data: null,
     error: null,
   },
 };
