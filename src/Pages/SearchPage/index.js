@@ -1,14 +1,26 @@
-import './style.css';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+
+import {
+  queryAnnouncement,
+  queryPropertyTypes,
+} from '../HomePage/reducer/actionTypes';
+
 import Search from '../../Components/Search';
 import SearchMap from './components/SearchMap';
 import SearchResult from './components/SearchResult';
 import SearchComparison from './components/SearchComparison';
 
 function SearchPage() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(queryAnnouncement());
+    dispatch(queryPropertyTypes());
+  }, []);
+
   return (
     <div className="SearchPage">
-      <header className="SearchPage-header">SearchPage</header>
-      <p>This is my search page.</p>
       <div>
         <Search />
       </div>
