@@ -10,3 +10,16 @@ export function requestQueryAnnouncement() {
     }`,
   });
 }
+
+export function requestQueryPropertyTypes() {
+  return graphql.post('/graphql', {
+    query: `{
+      propertyTypes {
+        id
+        code
+        label
+        description
+      }
+    }`,
+  });
+}

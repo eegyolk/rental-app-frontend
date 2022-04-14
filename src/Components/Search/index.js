@@ -1,3 +1,5 @@
+import { useSelector } from 'react-redux';
+import { useMemo } from 'react';
 import {
   Box,
   HStack,
@@ -11,6 +13,9 @@ import { SearchIcon } from '@chakra-ui/icons';
 import { BsSliders } from 'react-icons/bs';
 
 function Search() {
+  const home = useSelector((state) => state.home);
+  const { data } = useMemo(() => home.propertyTypes, [home.propertyTypes]);
+
   return (
     <Box
       bg="whiteAlpha.900"
@@ -47,11 +52,16 @@ function Search() {
           h="50px"
           w={300}
           textAlign="center"
-          defaultValue="option1"
+          defaultValue="1"
         >
-          <option value="option1">Apartment</option>
-          <option value="option2">Townhouse</option>
-          <option value="option3">Condominium</option>
+          {data &&
+            data.map((item, index) => {
+              return (
+                <option key={index} value={item.id}>
+                  {item.label}
+                </option>
+              );
+            })}
         </Select>
         <Button
           _focus={{ boxShadow: 'none' }}

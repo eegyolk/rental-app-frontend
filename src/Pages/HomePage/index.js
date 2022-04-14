@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
 
-import { queryAnnouncement } from './reducer/actionTypes';
+import { queryAnnouncement, queryPropertyTypes } from './reducer/actionTypes';
 
 import HomeHero from './components/HomeHero';
 import HomeBenefits from './components/HomeBenefits';
@@ -16,6 +16,7 @@ function HomePage() {
 
   useEffect(() => {
     dispatch(queryAnnouncement());
+    dispatch(queryPropertyTypes());
   }, []);
 
   return (
