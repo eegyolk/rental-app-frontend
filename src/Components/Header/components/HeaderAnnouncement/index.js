@@ -1,17 +1,24 @@
+import { useSelector } from 'react-redux';
+import { useMemo } from 'react';
 import { Box, HStack, Text } from '@chakra-ui/react';
 
 function HeaderAnnouncement() {
+  const home = useSelector((state) => state.home);
+  const { data } = useMemo(() => home.announcement, [home.announcement]);
+
   return (
-    <Box bg="#E1E1E1" w="100%" p={3} color="black">
-      <HStack spacing={2}>
-        <Text fontSize="md" fontWeight="semibold">
-          COVID-19 INFORMATION /{' '}
-        </Text>
-        <Text fontSize="sm" fontWeight="light">
-          For the latest updates, please visit our coronavirs (COVID-19) website
-        </Text>
-      </HStack>
-    </Box>
+    data && (
+      <Box bg="#E1E1E1" w="100%" p={3} color="black">
+        <HStack spacing={2}>
+          <Text fontSize="md" fontWeight="semibold">
+            {data.title} /{' '}
+          </Text>
+          <Text fontSize="sm" fontWeight="light">
+            {data.description}
+          </Text>
+        </HStack>
+      </Box>
+    )
   );
 }
 
