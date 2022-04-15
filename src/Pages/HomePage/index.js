@@ -17,7 +17,7 @@ function HomePage() {
   useEffect(() => {
     dispatch(queryAnnouncement());
     dispatch(queryPropertyTypes());
-  }, []);
+  });
 
   return (
     <Box>
