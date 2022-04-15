@@ -11,7 +11,7 @@ function SearchByPropertyType() {
       _focus={{ boxShadow: 'none' }}
       border="0"
       borderLeft="1px"
-      borderLeftColor="#C1C1C1"
+      borderLeftColor="#E1E1E1"
       borderRadius={0}
       color="#343844"
       h="50px"

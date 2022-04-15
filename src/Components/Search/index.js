@@ -1,8 +1,9 @@
-import { Box, HStack } from '@chakra-ui/react';
+import { Box, HStack, VStack } from '@chakra-ui/react';
 
 import SearchByAreaOrProperty from './components/SearchByAreaOrProperty';
 import SearchByPropertyType from './components/SearchByPropertyType';
 import SearchFilter from './components/SearchFilter';
+import SearchTags from './components/SearchTags';
 
 function Search() {
   return (
@@ -16,11 +17,16 @@ function Search() {
       borderRadius={5}
       display="block"
     >
-      <HStack>
-        <SearchByAreaOrProperty />
-        <SearchByPropertyType />
-        <SearchFilter />
-      </HStack>
+      <VStack spacing={4} align="stretch">
+        <HStack>
+          <SearchByAreaOrProperty />
+          <SearchByPropertyType />
+          <SearchFilter />
+        </HStack>
+        <HStack>
+          <SearchTags />
+        </HStack>
+      </VStack>
     </Box>
   );
 }

@@ -6,7 +6,7 @@ function SearchFilter() {
     <Button
       _focus={{ boxShadow: 'none' }}
       _hover={{ boxShadow: 'none' }}
-      _active={{ background: '#E46D2A' }}
+      _active={{ background: '#E46D2A', opacity: 0.6 }}
       borderLeftRadius="0"
       leftIcon={<BsSliders />}
       colorScheme="blue"
