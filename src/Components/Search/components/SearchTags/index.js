@@ -1,4 +1,4 @@
-import { Button } from '@chakra-ui/react';
+import { Box, Button } from '@chakra-ui/react';
 
 function SearchTags() {
   // TODO: Should
@@ -16,7 +16,7 @@ function SearchTags() {
   ];
 
   return (
-    <div>
+    <Box>
       {data.map((item, index) => {
         return (
           <Button
@@ -35,7 +35,7 @@ function SearchTags() {
           </Button>
         );
       })}
-    </div>
+    </Box>
   );
 }
 
