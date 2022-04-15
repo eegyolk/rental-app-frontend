@@ -1,4 +1,5 @@
 import { Box, HStack, VStack } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
 
 import SearchByAreaOrProperty from './components/SearchByAreaOrProperty';
 import SearchByPropertyType from './components/SearchByPropertyType';
@@ -30,5 +31,13 @@ function Search() {
     </Box>
   );
 }
+
+Search.defaultProps = {
+  isHome: true,
+};
+
+Search.propTypes = {
+  isHome: PropTypes.bool,
+};
 
 export default Search;
