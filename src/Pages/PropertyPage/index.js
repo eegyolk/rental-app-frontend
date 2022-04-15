@@ -18,14 +18,14 @@ function PropertyPage() {
   useEffect(() => {
     dispatch(queryAnnouncement());
     dispatch(queryPropertyTypes());
-  }, []);
+  });
 
   return (
     <div className="PropertyPage">
       <header className="PropertyPage-header">PropertyPage</header>
       <p>This is my property page.</p>
       <div>
-        <Search />
+        <Search isHome={false} />
       </div>
       <div>
         <PropertyImages />

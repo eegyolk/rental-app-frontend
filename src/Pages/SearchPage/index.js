@@ -17,12 +17,12 @@ function SearchPage() {
   useEffect(() => {
     dispatch(queryAnnouncement());
     dispatch(queryPropertyTypes());
-  }, []);
+  });
 
   return (
     <div className="SearchPage">
       <div>
-        <Search />
+        <Search isHome={false} />
       </div>
       <div>
         <SearchMap />
