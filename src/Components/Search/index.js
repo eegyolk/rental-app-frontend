@@ -51,11 +51,11 @@ function Search(props) {
               <SearchByPropertyType />
               <SearchFilter isHome={isHome} />
             </HStack>
-            <HStack spacing={0} textAlign="justify">
+            <Box spacing={0} overflow="auto" textAlign="justify" display="flex">
               <SearchByPreferences />
               <SearchByFeatures />
               <SearchByAmenities />
-            </HStack>
+            </Box>
           </VStack>
         </Box>
       )}

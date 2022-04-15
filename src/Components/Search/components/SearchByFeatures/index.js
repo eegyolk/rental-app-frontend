@@ -2,7 +2,7 @@ import { Box, Button } from '@chakra-ui/react';
 
 function SearchByFeatures() {
   return (
-    <Box w="35%" h={200} bg="#343844" color="white" pl={10} pt={10}>
+    <Box w="35%" h="auto" bg="#343844" color="white" pl={10} pt={10} pb={5}>
       By features
       <Box pt={5}>
         <Button

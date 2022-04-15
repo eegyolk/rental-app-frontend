@@ -4,7 +4,7 @@ import filterSwimmingPool from '../../../../assets/images/filter-swimming-pool.p
 
 function SearchByPreferences() {
   return (
-    <Box w="25%" h={200} bg="#343844" color="white" pl={10} pt={10}>
+    <Box w="25%" h="auto" bg="#343844" color="white" pl={10} pt={10} pb={5}>
       Most preferred by renters
       <HStack spacing={3} pt={5}>
         <Image h={20} src={filterSwimmingPool} alt="Swimming Pool" />
