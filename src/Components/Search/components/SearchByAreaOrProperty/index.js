@@ -1,11 +1,14 @@
 import { InputGroup, InputLeftElement, Input } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
+import PropTypes from 'prop-types';
 
-function SearchByAreaOrProperty() {
+function SearchByAreaOrProperty(props) {
+  const { isHome } = props;
+
   return (
     <InputGroup>
       <InputLeftElement
-        pl="30px"
+        pl={isHome ? '30px' : '50px'}
         position="inherit"
         pointerEvents="none"
         children={<SearchIcon color="black" />}
@@ -19,5 +22,13 @@ function SearchByAreaOrProperty() {
     </InputGroup>
   );
 }
+
+SearchByAreaOrProperty.defaultProps = {
+  isHome: true,
+};
+
+SearchByAreaOrProperty.propTypes = {
+  isHome: PropTypes.bool,
+};
 
 export default SearchByAreaOrProperty;
