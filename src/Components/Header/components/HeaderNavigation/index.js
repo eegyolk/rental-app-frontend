@@ -8,6 +8,7 @@ function HeaderNavigation() {
     <nav>
       <Box bg="#E46D2A" w="100%" p={5} color="white" display="flex">
         <HStack spacing={10}>
+          <Box w={5}></Box>
           <Link as={ReachLink} to="/">
             <Image src={logoHeader} alt="Balai Header Logo" />
           </Link>
@@ -39,6 +40,7 @@ function HeaderNavigation() {
           >
             <Text fontWeight="bold">List property</Text>
           </Link>
+          <Box w={5}></Box>
         </HStack>
       </Box>
     </nav>
